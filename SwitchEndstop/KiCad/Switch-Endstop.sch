@@ -1,0 +1,141 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "XY-Endstop"
+Date "2017-11-08"
+Rev "B"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 " CARLOS RUIZ"
+Comment4 " MAKSIM ZOLIN"
+$EndDescr
+$Comp
+L HallEffect_XY:Conn_01x04 J1
+U 1 1 5A00B701
+P 9400 4750
+F 0 "J1" H 9400 5000 50  0000 C CNN
+F 1 "CONN_01X04" V 9600 4750 50  0000 C CNN
+F 2 "HallEffect_XY:PinHeader_1x04_P2.54mm_Vertical" H 9485 5075 50  0001 C CNN
+F 3 "http://www.molex.com/pdm_docs/sd/705530002_sd.pdf" H 9455 5170 50  0001 C CNN
+F 4 "Molex" H 9400 4750 60  0001 C CNN "Manufacture"
+F 5 "0705530003" H 9400 4750 60  0001 C CNN "Manufacture P/N"
+F 6 "WM4902-ND" H 9400 4750 60  0001 C CNN "Digi-Key"
+F 7 "$1.10" H 9400 4750 60  0001 C CNN "Price @ 1"
+F 8 "$0.83780" H 9400 4750 60  0001 C CNN "Price @ 100 "
+F 9 "C225490" H 9400 4750 50  0001 C CNN "LCSC"
+	1    9400 4750
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5A0297BC
+P 9150 4950
+F 0 "#PWR06" H 9150 4700 50  0001 C CNN
+F 1 "GND" H 9150 4800 50  0000 C CNN
+F 2 "" H 9150 4950 50  0000 C CNN
+F 3 "" H 9150 4950 50  0000 C CNN
+	1    9150 4950
+	1    0    0    -1  
+$EndComp
+Text GLabel 9000 4750 0    55   Input ~ 0
+X_SIG
+Text GLabel 9000 4650 0    55   Input ~ 0
+Y_SIG
+Wire Wire Line
+	8400 4550 9200 4550
+Wire Wire Line
+	9200 4850 9150 4850
+Wire Wire Line
+	9150 4850 9150 4950
+Wire Wire Line
+	9200 4650 9000 4650
+Wire Wire Line
+	9200 4750 9000 4750
+Wire Wire Line
+	8400 4450 8400 4550
+$Comp
+L power:+5V #PWR05
+U 1 1 5A02910F
+P 8400 4450
+F 0 "#PWR05" H 8400 4300 50  0001 C CNN
+F 1 "+5V" H 8400 4590 50  0000 C CNN
+F 2 "" H 8400 4450 50  0000 C CNN
+F 3 "" H 8400 4450 50  0000 C CNN
+	1    8400 4450
+	1    0    0    -1  
+$EndComp
+Text GLabel 6150 4400 0    55   Input ~ 0
+Y_SIG
+$Comp
+L power:GND #PWR?
+U 1 1 5F2EF012
+P 6150 4500
+F 0 "#PWR?" H 6150 4250 50  0001 C CNN
+F 1 "GND" H 6150 4350 50  0000 C CNN
+F 2 "" H 6150 4500 50  0000 C CNN
+F 3 "" H 6150 4500 50  0000 C CNN
+	1    6150 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F2EF55B
+P 6150 4300
+F 0 "#PWR?" H 6150 4150 50  0001 C CNN
+F 1 "+5V" H 6150 4440 50  0000 C CNN
+F 2 "" H 6150 4300 50  0000 C CNN
+F 3 "" H 6150 4300 50  0000 C CNN
+	1    6150 4300
+	1    0    0    -1  
+$EndComp
+Text GLabel 6100 3500 0    55   Input ~ 0
+X_SIG
+$Comp
+L power:+5V #PWR?
+U 1 1 5F2EF49E
+P 6100 3400
+F 0 "#PWR?" H 6100 3250 50  0001 C CNN
+F 1 "+5V" H 6100 3540 50  0000 C CNN
+F 2 "" H 6100 3400 50  0000 C CNN
+F 3 "" H 6100 3400 50  0000 C CNN
+	1    6100 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F2F2623
+P 6100 3600
+F 0 "#PWR?" H 6100 3350 50  0001 C CNN
+F 1 "GND" H 6100 3450 50  0000 C CNN
+F 2 "" H 6100 3600 50  0000 C CNN
+F 3 "" H 6100 3600 50  0000 C CNN
+	1    6100 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 SX
+U 1 1 5F2F2B7A
+P 6300 3500
+F 0 "SX" H 6380 3542 50  0000 L CNN
+F 1 "Conn_01x03" H 6380 3451 50  0000 L CNN
+F 2 "" H 6300 3500 50  0001 C CNN
+F 3 "~" H 6300 3500 50  0001 C CNN
+	1    6300 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 SY
+U 1 1 5F2F3BBC
+P 6350 4400
+F 0 "SY" H 6430 4442 50  0000 L CNN
+F 1 "Conn_01x03" H 6430 4351 50  0000 L CNN
+F 2 "" H 6350 4400 50  0001 C CNN
+F 3 "~" H 6350 4400 50  0001 C CNN
+	1    6350 4400
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
